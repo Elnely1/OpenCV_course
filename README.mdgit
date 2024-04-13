@@ -1,0 +1,1 @@
+# OpenCV_course initgit add README.mdgit commit -m first commitgit branch -M maingit remote add origin https://github.com/Elnely1/OpenCV_course.gitgit push -u origin main
