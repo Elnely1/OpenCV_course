@@ -1,10 +1,9 @@
-import cv2 as cv
-
+import cv2 as cv                                        #! How to Scale Images and Videos
 img = cv.imread('photos/animal.jpg')
 cv.imshow('animal',img)
 
-def rescaleFrame(frame, scale=0.75):
-    #!this is work for images or old videos or live video
+def rescaleFrame(frame, scale=0.75):                    #!this is work for images or old videos or live video
+    
     width = int(frame.shape[1] * scale)
     height =int( frame.shape[1] * scale)
     dimentions = (width,height)
@@ -14,8 +13,8 @@ def rescaleFrame(frame, scale=0.75):
 resized_img = rescaleFrame(img, scale=0.1)
 cv.imshow('image', resized_img)
 
-def changeRes(width, height):
-    #!this is work for only live video
+def changeRes(width, height):                   #!this is work for only live video
+    
     capture.set(3, width)
     capture.set(4, height)
 

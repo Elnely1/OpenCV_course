@@ -2,3 +2,18 @@ import cv2 as cv: This line imports the OpenCV library into your Python script a
 img = cv.imread('photos/weman.jpg'): This line reads an image file named "weman.jpg" from the "photos" directory using the imread() function from OpenCV. It stores the image data in the variable img.
 cv.imshow('weman',img): This line displays the image stored in the variable img in a window with the title "weman" using the imshow() function. This function is used to display images in OpenCV.
 cv.waitKey(1000): This line waits for a specified amount of time (in milliseconds) for a key press. In this case, it waits for 1000 milliseconds (1 second) using the argument 1000. During this time, the image window is displayed
+#!This a small review to the steps
+# For example, to load an image:
+#import cv2
+# frame = cv2.imread('image.jpg')
+# Check if the frame is loaded successfully
+# if frame is not None:
+# or if you're reading from a video:
+# if cap.isOpened():
+# Ensure that the loaded image or frame has valid dimensions
+# if frame.shape[0] > 0 and frame.shape[1] > 0:
+# Display the image or video frame
+# cv2.imshow('Window Name', frame)
+# Wait for a key press and then close the window
+# cv2.waitKey(0)
+# cv2.destroyAllWindows
