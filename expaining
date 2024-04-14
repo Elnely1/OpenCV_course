@@ -1,0 +1,4 @@
+import cv2 as cv: This line imports the OpenCV library into your Python script and aliases it as cv. This alias allows you to refer to OpenCV functions and classes using the shorter name cv instead of cv2
+img = cv.imread('photos/weman.jpg'): This line reads an image file named "weman.jpg" from the "photos" directory using the imread() function from OpenCV. It stores the image data in the variable img.
+cv.imshow('weman',img): This line displays the image stored in the variable img in a window with the title "weman" using the imshow() function. This function is used to display images in OpenCV.
+cv.waitKey(1000): This line waits for a specified amount of time (in milliseconds) for a key press. In this case, it waits for 1000 milliseconds (1 second) using the argument 1000. During this time, the image window is displayed
