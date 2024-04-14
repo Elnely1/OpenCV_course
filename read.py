@@ -3,14 +3,13 @@ import cv2 as cv
 # For example, to load an image:
 # frame = cv2.imread('image.jpg')
 #*this is to use cv2 as cv
-#img = cv.imread('photos/weman.jpg')
+img = cv.imread('photos/weman.jpg')
 #*this to import the photo
-#cv.imshow('weman',img)
+cv.imshow('weman',img)
 #*to discribe the photo
-#cv.waitKey(1000)
+cv.waitKey(0)
 #* TODO the time that the photo will appear in
-#? Reading Videos
-#
+
 #import cv2
 
 # Check if the frame is loaded successfully
@@ -27,7 +26,7 @@ import cv2 as cv
 # Wait for a key press and then close the window
 # cv2.waitKey(0)
 # cv2.destroyAllWindows
-
+#? Reading Videos
 capture = cv.VideoCapture('videos/1112.mp4')
 
 while True:
