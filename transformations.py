@@ -33,11 +33,10 @@ cv.imshow('rotated', rotated)
 rotated_rotate = rotate(img, -45)
 cv.imshow('rotated rotate', rotated_rotate)
 
-#flipping
-flip = cv.flip(img, 0)                    #? 0--> vertical flip
-cv.imshow('fliped', flip)                 #? 1--> horizontal flip
-                                          #?-1--> both of them
-
+#flipping                                 #? 0--> vertical flip
+flip = cv.flip(img, 0)                    #? 1--> horizontal flip
+cv.imshow('fliped', flip)                 #?-1--> both of them
+                                          
 
 
 cv.waitKey(0)
